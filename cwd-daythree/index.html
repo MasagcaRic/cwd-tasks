@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Carousel</title>
+</head>
+<body class="grey darken-1">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper black">
+                <a href="#" class="brand-logo center">Carousel of Unsplash Photos</a>
+            </div> 
+            </nav>
+    </div>
+    
+
+    <div style="height: 70px"></div>
+
+<div class="container grey darken-2">
+    <div class="carousel">
+        <a href="#one!" class="carousel-item">
+            <img src="rick-rothenberg-qsCtctD-PT4-unsplash.jpg" alt="" class="">
+        </a>
+        <a href="#two!" class="carousel-item">
+            <img src="christophe-rollando-Q8g-hc935FE-unsplash.jpg" alt="" class="">
+        </a>
+        <a href="#three!" class="carousel-item">
+            <img src="christophe-rollando-EYo41TTTcWY-unsplash (1).jpg" alt="" class="">
+        </a>
+        <a href="#four!" class="carousel-item">
+            <img src="rhamely-kRawWsoijT4-unsplash.jpg" alt="" class="">
+        </a>
+        <a href="#five!" class="carousel-item">
+            <img src="pramod-tiwari-fSlEeTXeA24-unsplash.jpg" alt="" class="">
+        </a>
+    </div>
+</div>
+
+<div style="height: 100px"></div>
+
+<div class="container">
+    <div class="carousel carousel-slider">
+    <a href="#one!" class="carousel-item">
+        <img src="clark-van-der-beken-HKW_d22rBuc-unsplash.jpg" alt="" class="">
+    </a>
+    <a href="#two!" class="carousel-item">
+        <img src="bjorn-pierre-W3czJ2RVglg-unsplash.jpg" alt="" class="">
+    </a>
+    <a href="#three!" class="carousel-item">
+        <img src="bernd-dittrich-zgZ0k5STgh8-unsplash.jpg" alt="" class="">
+    </a>
+    <a href="#four!" class="carousel-item">
+        <img src="marek-piwnicki-fNjRywOI124-unsplash.jpg" alt="" class="">
+    </a>
+    <a href="#five!" class="carousel-item">
+        <img src="stoochi-lam--nMLcY5ur1U-unsplash.jpg" alt="" class="">
+    </a>
+    </div>
+</div>
+
+<div style="height: 100px;"></div>
+
+<!-- Special Options -->
+<div class="carousel carousel-slider center">
+    <div class="carousel-fixed-item center">
+        <a href="" class="btn waves-effect white grey-text darken-text">button</a>
+    </div>
+    <div class="carousel-item grey white-text" href="#one!">
+        <h2>Hi</h2>
+        <p class="white-text">Random</p>
+    </div>
+    <div class="carousel-item grey darken-2 white-text" href="#two!">
+        <h2>Hello</h2>
+        <p class="white-text">Again</p>
+    </div>
+    <div class="carousel-item grey darken-3 white-text" href="#three!">
+        <h2>Greetings</h2>
+        <p class="white-text">Just Testing</p>
+    </div>
+</div>
+
+<div style="height: 100px"></div>
+
+<footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Liked what you saw?</h5>
+          <p class="grey-text text-lighten-4">Check out Unsplash today!</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <ul>
+            <div style="height: 30px"></div>
+            <li><a class="grey-text text-lighten-3" href="https://unsplash.com/">Unsplash</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2014 Copyright Text
+      </div>
+    </div>
+  </footer>
+
+<!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $('.carousel').carousel();
+        $( 'carousel carousel-slider').carousel({
+            fullWidth: true
+        });
+    });
+    </script>
+</body>
+</html>

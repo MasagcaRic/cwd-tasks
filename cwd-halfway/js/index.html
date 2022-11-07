@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <title>Hitler's Artworks</title>
+</head>
+<body>
+<div class="grey darken-2">
+    <nav class="grey darken-4">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo white-text">Hitler's Works</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger">
+                    <i class="material-icons left">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active">
+                            <a href="index.html">dashboard</a>
+                        </li>
+                        <li>
+                            <a href="posts.html">categories</a>
+                        </li>
+                        <li>
+                            <a href="posts.html">pictures</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- the sidenav -->
+<ul id="slide-out" class="sidenav grey darken-2">
+    <li>
+        <div class="user-view">
+            <div class="background grey darken-4"></div>
+            <a href="#" class="">
+                <img src="befunky_2022-9-3_8-28-15.jpg" alt="" class="">
+            </a>
+            <a href="#">
+                <span class="name white-text">Adolf Hitler</span>
+            </a>
+            <a href="#">
+                <span class="title white-text">World War 2 Leader</span>
+            </a>
+        </div>
+    </li>
+    <li class="divider black"></li>
+    <li class="active">
+        <a href="index.html"><i class="material-icons">dashboard</i>dashboard</a>
+    </li>
+    <li>
+        <a href="art.html">Artworks</a>
+    </li>
+    <li>
+        <a href="history.html">History</a>
+    </li>
+    <li>
+        <a href="crimes.html">War Crimes</a>
+    </li>
+    <li>
+        <div class="divider black"></div>
+    </li>
+    <li>
+        <a href="" class="subheader">Other World War 2 Leaders</a>
+    </li>
+</ul>
+</div>
+
+<!-- section: test -->
+<section class="section section-stats">
+    <div class="row">
+        <div class="col s12 m6 l3">
+            <div class="card-panel grey lighten-1 center">
+                <i class="material-icons medium">brush</i>
+                <h5>Hitler's Completed Works:</h5>
+                <h3 class="count">300</h3>
+                <div class="progress">
+                    <div class="determinate" style="width: 30%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card-panel grey lighten-1 center">
+                <i class="material-icons medium">brush</i>
+                <h5>Hitler's Total Works:</h5>
+                <h3 class="count">1000+</h3>
+                <div class="progress">
+                    <div class="indeterminate"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card-panel grey lighten-1 center">
+                <i class="material-icons medium">brush</i>
+                <h5>Hitler's Accepted Works:</h5>
+                <h3 class="count">20</h3>
+                <div class="progress">
+                    <div class="determinate" style="width: 20%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card-panel grey lighten-1 center">
+                <i class="material-icons medium">brush</i>
+                <h5>Paintings of Hitler still Alive:</h5>
+                <h3 class="count">700+</h3>
+                <div class="progress">
+                    <div class="determinate" style="width: 70%"></div>
+                </div>
+            </div>
+        </div>
+<!-- container end -->
+    </div>
+</section>
+<!-- chart -->
+<section class="section section-chart">
+    <div class="row">
+        <div class="col s6 m6 l6">
+            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        </div>
+        <div class="col s6 m6">
+            <a href="" class="brand-logo white-text">Latest Comments:</a>
+            <div class="card-panel grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                <div class="col s2">
+                    <img src="Vladimir_Putin_17-11-2021_(cropped).png" alt="" class="circle responsive-img">
+                    <a>Vladimir Putin</a>
+                </div>
+                <div class="col s10">
+                    <span class="black-text">
+                    My artworks are better than Hitler's. L + Ratio.
+                    </span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div>
+    <div class="divider" style="height: 370px;"></div>
+    <img src="Vladimir_Putin_17-11-2021_(cropped).png">
+</div>
+
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script>
+  // Or with jQuery
+$(document).ready(function() {
+    $('.sidenav').sidenav({
+        edge: 'left',
+        inDuration: 500,
+        outDuration: 350,
+        preventScrolling: true
+    });
+});
+</script>
+<script>
+    window.onload = function () {
+    
+    var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        theme: "dark2", // "light1", "light2", "dark1", "dark2"
+        title: {
+            text: "Hitler's Artworks - 1908-1913"
+        },
+        axisY: {
+            title: "Amount of ArtWorks",
+            suffix: ""
+        },
+        axisX: {
+            title: "Category"
+        },
+        data: [{
+            type: "column",
+            yValueFormatString: "#,##0.0#\"\"",
+            dataPoints: [
+                { label: "Total", y: 1000 },	
+                { label: "Completed", y: 300 },	
+                { label: "Accepted", y: 20 },
+                { label: "Still Alive", y: 700 },	
+                
+            ]
+        }]
+    });
+    chart.render();
+    
+    }
+    </script>
+
+
+</body>
+</html>
